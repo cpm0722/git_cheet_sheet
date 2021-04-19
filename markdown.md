@@ -257,3 +257,78 @@
 
         3.  Update the title to match the name of your website.
 
+## Code (코드)
+### Code Phrase (코드 구절)
+* 단어 또는 구절을 코드로 표현하고 싶은 경우 시작과 끝에 '`' 삽입  
+    * 예시 코드  
+        ```
+        At the command prompt, type `nano`.
+        ```
+    * 출력 결과  
+        At the command prompt, type `nano`.  
+* 코드화시키려는 구문 내에 '`'이 포함된 경우 구문 시작과 끝에 '`'를  2개씩 삽입
+    * 예시 코드  
+        ```
+        ``Use `code` in your Markdown file.``  
+        ```
+    * 출력 결과  
+        ``Use `code` in your Markdown file.``  
+### Code Block (코드 블럭)
+* 코드 블럭을 작성하고 싶은 경우 모든 코드 라인 내에 최소 tab 1개 또는 공백 4개를 사용해 indent를 삽입해야 함 (목록 내부에서는 tab 2개 또는 공백 8개 이상)  
+## Horizontal Rule (수평선)
+* 수평선을 작성하고 싶은 경우 "***", "---", "___" 중 한 가지를 포함한 행을 삽입  
+    * 예시 코드  
+        ```
+        ***
+        ------
+        _________
+        ```
+    * 출력 결과  
+        ***
+        ------
+        _________
+* 호환성을 위해 수평선 직전, 직후에 빈 행을 삽입하는 것이 바람직  
+## Links (링크)
+* 형식  
+    | 형식 | 예시 코드 | 출력 결과 |  
+    | --- | --- | --- |  
+    | [텍스트](링크 URL) | `My favorite search engine is [Google](https://google.com).` | My favorite search engine is [Google](https://google.com). |  
+    | [텍스트](링크 URL "링크 타이틀") | `My favorite search engine is [Google](https://google.com "The best search engine").` | My favorite search engine is [Google](https://google.com "The best search engine"). |  
+    | <링크 URL> | `<fake@example.com>` | <fake@example.com> |  
+    * 링크 타이틀: 링크에 마우스 커서를 올릴 경우 출력되는 텍스트  
+* 링크의 시작과 끝에 '*', '_'를 삽입해 텍스트 강조(italic, bold, italic & bold) 가능
+    | 예시 코드 | 출력 결과 |  
+    | --- | --- |  
+    | `I love supporting the **[EFF](https://eff.org)**.` | I love supporting the **[EFF](https://eff.org)**. |  
+    | `I love supporting the _[EFF](https://eff.org)_.` | I love supporting the _[EFF](https://eff.org)_. |  
+* 링크 URL 내부 공백은 %20으로 대체해야 함
+## Image (이미지)
+* 형식  
+    | 형식 | 예시 코드 | 출력 결과 |  
+    | --- | --- | --- |  
+    | \!\[대체텍스트\]\(이미지링크\) | `![Linux Penguin](/assets/images/tux.png)` | ![Linux Penguin](/assets/images/tux.png) |  
+    | \!\[대체텍스트\]\(이미지링크 "이미지 타이틀"\) |  `![Linux Penguin](/assets/images/tux.png "Linux Penguin is cute!!")` | ![Linux Penguin](/assets/images/tux.png "Linux Penguin is cute!!") |  
+    | \[\!\[대체텍스트\]\(이미지링크\)\]\(링크 URL\) | `[![Linux Penguin](/assets/images/tux.png)](https://linux.com)` | [![Linux Penguin](/assets/images/tux.png)](https://linux.com) |  
+    * 대체 텍스트: 이미지 출력이 불가능한 경우 출력될 텍스트 
+    * 이미지 타이틀: 이미지에 마우스 커서를 올릴 경우 출력되는 텍스트  
+## Escaping Characters (탈출 문자)
+* 마크다운 문법에서 사용하는 특수 문자들을 그대로 출력하고 싶은 경우 해당 문자 앞에 '\'를 삽입해 그대로 출력 가능  
+* 탈출 문자 종류  
+    | 문자 | 명칭 |  
+    | --- | --- |  
+    | \ | backslash |  
+    | ` |  backtick |  
+    | * |  asterisk |  
+    | _ |  underscore |  
+    | { } | curly braces |  
+    | [ ] | brackets |  
+    | < > | angle brackets |  
+    | ( ) | parentheses |  
+    | #  | pound sign |  
+    | +  | plus sign |  
+    | -  | minus sign (hyphen) |  
+    | .  | dot |  
+    | !  | exclamation mark |  
+    | \|  | pipe |  
+## GFM (GitHub Flavered Markdown)
+[GitHub Repository URL for GFM CheetSheet](https://github.com/cpm0722/markdown/)

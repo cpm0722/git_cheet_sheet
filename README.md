@@ -22,7 +22,7 @@
 ## remote
 
 - github로 git 레퍼지토리를 관리하기 위해 github에서 새로운 repository를 생성한다. 이 때, README.md 파일이 기본적으로 생성되도록 체크한다.  
-![make git repository](images/02.make_git_repository.jpg)  
+![make git repository](images/02.create_git_repository.jpg)  
 
 - git 레퍼지토리에서 git remote 명령어를 사용해 현재 remote 저장소 목록을 확인한다. 비어 있는 것을 확인할 수 있다. remote add 명령어를 사용해 origin 저장소로 github 레퍼지토리 주소를 추가한다.  
 ![check remote storage](images/03.remote.jpg)  
